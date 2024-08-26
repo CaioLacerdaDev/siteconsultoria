@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/contato.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Consultoria <span>Daniel</span></a>
+
+        <nav class="navbar">
+            <a href="index.html" >Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html"class="active">Contato</a>
+    </header>
+    <div id="animal">
+    <h1>Formulario Completo</h1>
+    <form>
+        <fieldset>
+            <legend>Informaçoes Pessoas:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder ="Digite seu nome" required maxlength="100">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder ="Digite seu email" required maxlength="100">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder ="Digite sua senha" minlength="4" maxlength="8">
+
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder ="Digite sua idade" required minlength="18" maxlength="100">
+
+            <label for="data-de-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-de-nascimento" name="data-de-nascimento" placeholder ="Digite sua data de nascimento" required>       
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias:</legend>
+            <label>Genero:</label>
+            <div id="freefire">
+            <input type="radio" id="masculino" name="genero" value="masculino" required checked>
+            <label for="masculino">Masculino |</label>  
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label> 
+        </fieldset>
+        <fieldset>
+            <legend>Interesses:</legend>
+            <div id="freefiree">
+            <input type="checkbox" id="Ganhodemassa" name="interesses" value="Ganhodemassa">
+            <label for="Ganhodemassa">Ganho de massa |</label> 
+            <input type="checkbox" id="Percademassagorda" name="interesses" value="Percademassagorda">
+            <label for="Percademassagorda">Perca de massa gorda |</label> 
+            <input type="checkbox" id="Emagrecer" name="interesses" value="Emagrecer">
+            <label for="Emagrecer">Emagrecer</label>
+            </div>
+            <br><br/>
+            <label for="cidade">Cidades:</label>
+            <select id="cidade" name="cidade" required>
+                <option value="sao-paulo">Sao Paulo</option>
+                <option value="Valinhos">Valinhos</option>
+                <option value="campinas">Campinas</option>
+                <option value="vinhedo">Vinhedo</option>
+            </select> 
+        </fieldset>
+    <fieldset>
+        <legend>Enviar Arquivo:</legend>
+        <label for="foto">Foto de perfil:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+    </fieldset>
+    <button type="submit">Enviar</button>
+    <a href="https://www.instagram.com/d.anslm_/" target="_blank" class="instagram-link">
+        <img src="assets/images/logo instagram.png" alt="Instagram" class="instagram-icon">
+    </a>
+    </form>
+    </div>
+</body>
+</html>
